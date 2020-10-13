@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>05211942000008 Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">(Un)Equal Width Columns</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Navigation Bar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Form Input</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">Alert Box</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Total List
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section1">(Un)Equal Width Columns</a>
+                    <a class="dropdown-item" href="#section2">Navigation Bar</a>
+                    <a class="dropdown-item" href="#section3">Form Input</a>
+                    <a class="dropdown-item" href="#section4">Alert Box</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+        <h1>(Un)Equal Width Columns</h1>
+        <p>kalo pake col, dia menyesuaikan. kalo dikasih angka, maksimal 12,</p>
+        <p>ada 4 size. sm, md, lg, xl. semua tergantung size pixel layar.</p>
+    </div>
+    <div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+        <h1>Navigation Bar</h1>
+        <p>navbar ini ada hubungan sama scroll buat intro ke page nya. menjelaskan tiap div yang udah dicobain.</p>
+        <p>juga pake sistem scroll dan hyperlink dari tiap navigation.</p>
+    </div>
+    <div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+        <h1>Form Input</h1>
+        <p>Belajar membuat tempat input disertai beberapa button dengan attribute danger dan disabled.</p>
+    </div>
+    <div id="section4" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+        <h1>Alert Box</h1>
+        <p>Alerting that the project is done.</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" style="background-color: orange;">welcome</div>
+            <div class="col" style="background-color: green;">to</div>
+            <div class="col" style="background-color: orange;">the</div>
+            <div class="col" style="background-color: green;">jungle</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Form control: input</h2>
+        <p>The form below contains two input elements; one of type text and one of type password:</p>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            <button type="button" class="btn btn-danger btn-block" disabled>DO NOT PRESS SUBMIT!!!</button>
+        </form>
+    </div>
+<br>
+<br>
+    <div class="container-fluid">
+        <div class="alert alert-success">
+            <strong>Done!</strong> Thank you for reading this project!
+        </div>
+    </div>
+</body>
+</html>
