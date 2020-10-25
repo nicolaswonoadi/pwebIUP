@@ -12,18 +12,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        .fakeimg {
-            height: 200px;
-            background: #aaa;
+        body {
+            background-color: rgba(26, 0, 56, 0.973)
+        }
+
+        h1,
+        h2,
+        h3,
+        h6,
+        p {
+            color: aliceblue
         }
     </style>
 </head>
 
 <body>
 
-    <div class="jumbotron text-center bg-primary" style="margin-bottom:0">
-        <h1>My First Experiment With Bootstrap</h1>
-        <p>Please, Enjoy!!</p>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-caption">
+                <h1>My First Experiment With Bootstrap</h1>
+                <p>Please, Enjoy!!</p>
+            </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="image/carousel1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="image/carousel2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="image/carousel3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
@@ -47,7 +75,7 @@
         <div class="row" id="opening">
             <div class="col-sm-4">
                 <h2>About Me</h2>
-                <h5>Photo of me:</h5>
+                <h5 style="color:aliceblue">Photo of me:</h5>
                 <img src="image/aboutme2.jpg">
                 <p>My name is Alexander Nicolas. I am 18 years old, living in Jakarta.
                     I am currently studying in ITS Surabaya majoring in Information System.
@@ -64,7 +92,7 @@
             </div>
             <div class="col-sm-8">
                 <h2>My Favorite Activity Since Pandemic</h2>
-                <h5>Road Cycling</h5>
+                <h5 style="color:aliceblue">Road Cycling</h5>
                 <img src="image/carousel1new.jpg">
                 <p><i>Picture was taken on 2018</i></p>
                 <p>Since the COVID-19 pandemic, i have been searching for
@@ -87,7 +115,7 @@
                         <h4 class="my-0 font-weight-normal">File 1</h4>
                     </div>
                     <div class="card-body">
-                        <img src="image/ass1new.jpg">
+                        <img src="image/ass1new.jpg" width="100%">
                         <h5>File Content</h5>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Categorizing div</li>
@@ -106,7 +134,7 @@
                         <h4 class="my-0 font-weight-normal">File 2</h4>
                     </div>
                     <div class="card-body">
-                        <img src="image/ass2new.jpg">
+                        <img src="image/ass2new.jpg" width="100%">
                         <h5>File Content</h5>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Border color</li>
@@ -124,7 +152,7 @@
                         <h4 class="my-0 font-weight-normal">File 3</h4>
                     </div>
                     <div class="card-body">
-                        <img src="image/ass3new.jpg">
+                        <img src="image/ass3new.jpg" width="100%">
                         <h5>File Content</h5>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Margin</li>
@@ -139,17 +167,18 @@
                 </div>
             </div>
 
-            <div class="card-deck col-sm-12 text-center mt-5">
-                <div class="card shadow-sm">
+            <div class="card-deck col-sm-12 text-center mt-2">
+                <div class="card mb-4 shadow-sm">
                     <div class="card-header">
                         <h4 class="my-0 font-weight-normal">File 4</h4>
                     </div>
                     <div class="card-body">
-                        <img src="image/ass4new.jpg">
+                        <img src="image/ass4new.jpg" width="100%">
                         <h5>File Content</h5>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Text formating</li>
-                            <li>font size, spacing</li>
+                            <li>font size</li>
+                            <li>font spacing</li>
                             <li>font strength</li>
                         </ul>
                         <a href="tugas1css/05211942000008_4.html" target="_blank"><button type="button"
@@ -162,7 +191,7 @@
                         <h4 class="my-0 font-weight-normal">File 5</h4>
                     </div>
                     <div class="card-body">
-                        <img src="image/ass5new.jpg">
+                        <img src="image/ass5new.jpg" width="100%">
                         <h5>File Content</h5>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Font strength</li>
@@ -180,7 +209,7 @@
                         <h4 class="my-0 font-weight-normal">File 6</h4>
                     </div>
                     <div class="card-body">
-                        <img src="image/ass6new.jpg">
+                        <img src="image/ass6new.jpg" width="100%">
                         <h5>File Content</h5>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Combination off all css</li>
@@ -194,8 +223,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <div class="jumbotron text-center" style="margin-bottom:0">© 2020 Copyright: Alex</div>
